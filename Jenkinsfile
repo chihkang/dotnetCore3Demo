@@ -1,10 +1,8 @@
-
-@@ -0,0 +1,54 @@
 pipeline {
     agent any
     environment {
         // dotnet = '/usr/local/share/dotnet'
-        PROJECT_NAME='RestAPI'
+        //PROJECT_NAME='RestAPI'
     }
     stages{
         stage('clone from github repo') {
@@ -23,14 +21,14 @@ pipeline {
 
         stage('dotnet restore') {
             steps{
-                 sh("dotnet build ./${PROJECT_NAME}")
-
+                 //sh("dotnet build ./${PROJECT_NAME}")
+		sh("dotnet build")
             }
         }
         stage('dotnet publish'){
             steps{
                 // withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin']) {
-                sh(script:"dotnet publish ./${PROJECT_NAME} -o /Users/chihkang/Desktop/jenkins-practice/pipeline", returnStdout: true)
+                sh(script:"dotnet publish -o /Users/chihkang/Desktop/jenkins-practice/pipeline", returnStdout: true)
                 // }
             }
         }
