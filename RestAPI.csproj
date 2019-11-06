@@ -8,12 +8,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="RestAPI\Properties\" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="RestAPI\Properties\launchSettings.json" />
     <Content Remove="RestAPI\obj\project.assets.json" />
     <Content Remove="RestAPI\obj\RestAPI.csproj.nuget.dgspec.json" />
+    <Content Remove="Properties\launchSettings.json" />
+    <Content Remove="test\Properties\launchSettings.json" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="RestAPI\obj\Debug\netcoreapp3.0\RestAPI.assets.cache" />
