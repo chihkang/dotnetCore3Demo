@@ -7,4 +7,17 @@
   <ItemGroup>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="RestAPI\Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="RestAPI\Properties\launchSettings.json" />
+    <Content Remove="RestAPI\obj\project.assets.json" />
+    <Content Remove="RestAPI\obj\RestAPI.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="RestAPI\obj\Debug\netcoreapp3.0\RestAPI.assets.cache" />
+    <None Remove="RestAPI\obj\Debug\netcoreapp3.0\RestAPI.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Remove="RestAPI\obj\Debug\netcoreapp3.0\RestAPI.csprojAssemblyReference.cache" />
+  </ItemGroup>
 </Project>
