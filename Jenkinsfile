@@ -1,9 +1,9 @@
 pipeline {
     agent any
-    environment {
+    //environment {
         // dotnet = '/usr/local/share/dotnet'
         //PROJECT_NAME='RestAPI'
-    }
+    //}
     stages{
         stage('clone from github repo') {
             steps{
