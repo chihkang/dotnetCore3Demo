@@ -1,3 +1,3 @@
 # dotnetCore3Demo
 
-# for jenkis test
+# for jenkis test using dotnetcore 3.0
